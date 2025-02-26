@@ -1,0 +1,86 @@
+:root {
+    --principal: #000065;
+    --secundario: #ffffff;
+}
+
+@font-face {
+    font-family: inter;
+    src: url(/assets/font/Inter_18pt-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: inter, sans-serif, helvetica;
+    background-color: var(--secundario);
+}
+
+header {
+    background-color: var(--principal);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 100dvw;
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--principal);
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 15px;
+    text-align: center;
+}
+
+.nav-item {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#bar-toggle {
+    color: var(--secundario);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 3s;
+}
+
+.active {
+    left: 0dvw;
+}
