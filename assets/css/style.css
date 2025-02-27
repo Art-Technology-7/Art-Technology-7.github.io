@@ -148,7 +148,7 @@ h1, h2 {
 .precios {
     width: 90%;
     height: 90%;
-    margin: auto;
+    margin: 15px auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -196,6 +196,44 @@ button {
     font-size: 1em;
     box-shadow: 1px 1px gray;
     cursor: pointer;
+}
+
+.contacto {
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secundario);
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+label {
+    color: var(--secundario);
+
+}
+
+.form-group {
+    width: 100%;
+    background-color: var(--principal);
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+input {
+    background: none;
 }
 
 footer {
