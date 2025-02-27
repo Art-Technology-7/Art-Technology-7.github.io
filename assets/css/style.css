@@ -160,6 +160,7 @@ h1, h2 {
     height: 350px;
     border-radius: 15px;
     box-shadow: 2px 2px rgb(228, 228, 228);
+    border: 1px solid black;
 }
 
 .box-precio {
@@ -191,7 +192,9 @@ li {
 button {
     background-color: var(--principal);
     margin: 25px;
+    padding: 10px;
     color: var(--secundario);
+    text-align: center;
     border-radius: 5px;
     font-size: 1em;
     box-shadow: 1px 1px gray;
@@ -210,6 +213,7 @@ button {
 
 .formulario-contacto {
     display: flex;
+    margin: 10px 0;
     flex-direction: column;
     gap: 10px;
     align-items: center;
